@@ -236,8 +236,22 @@ require("lazy").setup({
 	-- keys can be used to configure plugin behavior/loading/etc.
 	--
 	-- Use `opts = {}` to force a plugin to be loaded.
-	--
+	--  -- Emmet for HTML/CSS abbreviation expansion
+	{
+		"mattn/emmet-vim",
+		ft = { "html", "css", "javascript", "javascriptreact", "typescriptreact" },
+		config = function()
+			vim.g.user_emmet_mode = "a"
+		end,
+	},
 
+	{
+		"windwp/nvim-ts-autotag",
+		ft = { "html", "javascript", "javascriptreact", "typescriptreact", "vue", "xml" },
+		config = function()
+			require("nvim-ts-autotag").setup()
+		end,
+	},
 	-- Here is a more advanced example where we pass configuration
 	-- options to `gitsigns.nvim`. This is equivalent to the following Lua:
 	--    require('gitsigns').setup({ ... })
