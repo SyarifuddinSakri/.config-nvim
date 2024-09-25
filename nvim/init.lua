@@ -465,7 +465,7 @@ require("lazy").setup({
 		},
 	},
 	{ "Bilal2453/luvit-meta", lazy = true },
-	{ "mfussenegger/nvim-jdtls" },
+	{ "mfussenegger/nvim-jdtls", ft = { "java" } },
 	{
 		-- Main LSP Configuration
 		"neovim/nvim-lspconfig",

@@ -20,7 +20,7 @@ return {
 		-- Check if the current file type is Java
 		local add_java_angle_bracket_rule = function()
 			local filetype = vim.bo.filetype
-			if filetype == "java" then
+			if filetype == "java" or filetype == "html" or filetype == "xml" then
 				npairs.add_rule(Rule("<", ">"))
 			end
 		end
