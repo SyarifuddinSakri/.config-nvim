@@ -466,6 +466,7 @@ require("lazy").setup({
 	},
 	{ "Bilal2453/luvit-meta", lazy = true },
 	{ "mfussenegger/nvim-jdtls", ft = { "java" } },
+	{ "mfussenegger/nvim-dap" },
 	{
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v3.x",
